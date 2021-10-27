@@ -35,7 +35,7 @@ namespace Proyecto45MDI
             SqlConnection Ocon = new SqlConnection(cadena);
             Ocon.Open();
             string SQLConsul = "select Estado from Usuarios where Usuario = '"+ txtUsuario.Text +"' and Password = '"+ txtContra.Text +"'";
-            SqlCommand Ocoman = new SqlCommand(SQLConsul , Ocon);
+            SqlCommand Ocoman = new SqlCommand(SQLConsul , Ocon);//
             Ocoman.CommandType = CommandType.Text;
             int escalar = Convert.ToInt32(Ocoman.ExecuteScalar());
             if (escalar == 1)
