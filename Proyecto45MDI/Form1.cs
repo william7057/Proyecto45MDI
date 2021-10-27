@@ -46,11 +46,6 @@ namespace Proyecto45MDI
             this.LayoutMdi(MdiLayout.TileVertical);
         }
 
-        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CreaUsuario CForm = new CreaUsuario();
-            CForm.MdiParent = this;
-            CForm.Show();
-        }
+
     }
 }
